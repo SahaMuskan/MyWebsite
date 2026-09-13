@@ -55,6 +55,23 @@
     sections.forEach(function (s) { spy.observe(s); });
   }
 
+  // "Enquire about this tool" buttons preselect the matching reason
+  var reason = document.getElementById('cf-reason');
+  Array.prototype.forEach.call(document.querySelectorAll('[data-tool]'), function (btn) {
+    btn.addEventListener('click', function () {
+      if (!reason) return;
+      var want = btn.getAttribute('data-tool');
+      Array.prototype.forEach.call(reason.options, function (o) {
+        if (o.text.trim() === want.trim()) { reason.value = o.value || o.text; o.selected = true; }
+      });
+      // let the anchor scroll first, then put the cursor in the message box
+      setTimeout(function () {
+        var msg = document.getElementById('cf-msg');
+        if (msg) msg.focus({ preventScroll: true });
+      }, 700);
+    });
+  });
+
   // Contact form (Web3Forms) — needs a real access_key; see README
   var form = document.getElementById('contact-form');
   var status = document.getElementById('form-status');

@@ -84,13 +84,13 @@
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <h1 id="hero-h" class="hero-h">
-            <span class="l">Making credit risk</span>
-            <span class="l"><em>defensible</em>.</span>
+            <span class="l">Turning risk insight</span>
+            <span class="l">into <em>defensible</em></span>
+            <span class="l">decisions.</span>
           </h1>
-          <p class="hero-lead">Muskan Saha is a credit risk specialist — model developer, independent validator and quantitative analyst.</p>
+          <p class="hero-lead">Muskan Saha is a risk specialist — model developer, independent validator and quantitative analyst.</p>
           <div class="hero-bio">
-            <p>Muskan came to credit risk with a quant background, and she still reads a portfolio the way she reads an experiment: find the real distribution, question every assumption, and never trust a number that cannot be defended. That instinct is what model risk is actually about, and it shows in the work — she has developed the models behind credit decisions worth billions, from scorecards and PD term structures to loss forecasts and stress tests, and on separate engagements she has been the independent validator challenging them under IFRS&nbsp;9, CECL, CCAR and IRB.</p>
-            <p>Her standard is models that are transparent, challenger-tested and built to survive the full credit cycle, not engineered to clear a review and fail when the macro turns — which is why she is as comfortable developing a model as she is defending it before a Model Risk committee.</p>
+            <p>Muskan&rsquo;s strong quantitative background enables her to translate complex credit risk challenges into practical, efficient and well-governed modelling solutions. She has developed a wide range of credit risk models, including scorecards, PD term structures, loss forecasts and stress-testing frameworks, supporting high-value lending decisions. Her experience also extends to independent model validation under IFRS&nbsp;9, CECL, CCAR and IRB, giving her a balanced perspective on both building models and critically assessing their performance, reliability and regulatory compliance.</p>
           </div>
           <div class="hero-cta">
             <a class="btn btn-solid" href="#contact">Discuss an opportunity</a>
@@ -110,7 +110,7 @@
     <section id="work" class="sec sec-alt" aria-labelledby="work-h">
       <div class="wrap">
         <h2 id="work-h" class="sec-h">Selected work</h2>
-        <p class="sec-note">Representative engagements, framed to respect client confidentiality — the approach and the standard, never the proprietary detail.</p>
+        <p class="sec-note">Representative engagements, framed to respect client confidentiality.</p>
         <ol class="work">
           <li class="work-item">
             <p class="work-tag">PPNR Forecasting · Tier-1 US Bank</p>
@@ -141,7 +141,7 @@
         <p class="sec-note">Tools built outside client engagements — addressing gaps encountered in day-to-day model risk practice.</p>
         <div class="builds">
           <article class="build-item">
-            <p class="work-tag">Open source · IFRS 9 · Disclosure benchmarking</p>
+            <p class="work-tag">IFRS 9 · Disclosure benchmarking</p>
             <h3>IFRS 9 / ECL Peer Benchmarking</h3>
             <p class="build-lead">Turns ten banks' annual reports into a cited, analyst-ready IFRS 9 benchmarking set — without inventing a single figure.</p>
             <p class="work-body">Annual reports run to roughly 300 pages each, and the IFRS 9 disclosures an analyst actually needs are scattered through them. This tool ingests up to ten firms' PDFs and extracts five subsections per firm — core ECL and coverage, the staging table, impairment movement, model design (scenarios and weights, SICR, 30/90-DPD backstops, PMAs and overlays, climate, PD·LGD·EAD) and disclosure notes — then produces a browsable site, a consolidated PDF and a Power BI-ready master Excel.<br /><br />The engineering is in the guardrails. Text is extracted layout-preserving, so multi-column tables don't collapse into ambiguous number streams. Retrieval narrows ~500 pages to the ~9 most relevant per section before anything reaches the model. A numeric value is kept only if its digits literally appear on a supplied page, and its citation is re-pointed to the page that actually contains it. Every figure carries a printed-page citation and a status flag — <strong>EXACT</strong>, <strong>PROXY</strong>, <strong>DERIVED</strong> or <strong>NOT DISCLOSED</strong> — and anything absent is listed rather than invented. Currency and units are detected per firm, and the approach was validated against five real bank annual reports. The dashboard below is shown with <strong>illustrative demo data for fictional peer banks</strong> — a live run extracts from real annual reports.</p>
@@ -188,7 +188,7 @@
           </article>
 
           <article class="build-item">
-            <p class="work-tag">Open source · Model risk tooling</p>
+            <p class="work-tag">Model risk tooling</p>
             <h3>Model Inventory &amp; Risk Tracker</h3>
             <p class="build-lead">A working model-risk register that tiers every model, schedules its revalidation, and tracks findings through to closure.</p>
             <p class="work-body">Most model inventories are maintained in spreadsheets. This is a purpose-built alternative. Every model is scored on five factors — materiality, complexity, reliance, regulatory impact and uncertainty — into a weighted <strong>Tier 1/2/3</strong> rating, and that tier drives the revalidation clock, flagging each model overdue, due soon or current. Findings are logged against models and tracked to resolution, with a dashboard over the top. It ships with a written methodology, CSV import/export for the Excel workflow teams actually use, and a Docker path for internal hosting — seeded with a fictional bank inventory for demonstration.</p>
@@ -223,7 +223,7 @@
           </article>
 
           <article class="build-item">
-            <p class="work-tag">Open source · AI &amp; GenAI model risk</p>
+            <p class="work-tag">AI &amp; GenAI model risk</p>
             <h3>Model Risk Studio</h3>
             <p class="build-lead">A validation framework for the models traditional model risk was never designed for — machine learning and LLMs, assessed side by side.</p>
             <p class="work-body">Most validation frameworks assume scorecards and regression. This one sets traditional ML and generative AI next to each other so the difference in <em>how each must be validated</em> becomes obvious, anchored to <strong>SR 11-7</strong>, the <strong>NIST AI Risk Management Framework</strong> and <strong>EU AI Act</strong> risk tiers. Models are rated on the dimensions that actually make AI risky — explainability, autonomy, output variability, drift, fairness, and for GenAI, hallucination and prompt-injection exposure — rolling transparently into a Tier 1/2/3 rating that sets revalidation cadence. <em>Track A</em> runs the traditional battery: discrimination (AUC, Gini, KS), calibration, PSI drift, feature importance and four-fifths fairness testing. <em>Track B</em> stress-tests a customer-facing banking chatbot through an editable system prompt and an impartial LLM-as-judge — weaken a guardrail and a test visibly fails. It runs fully simulated by default, or live against OpenAI, Azure OpenAI or any OpenAI-compatible internal gateway. Results are illustrative rather than production-calibrated, and the app says so.</p>
@@ -272,7 +272,6 @@
             <li>SHAP built to satisfy a committee and SHAP that actually explains score variation are not the same deliverable — and the difference shows under stress.</li>
             <li>GenAI earns its place in model documentation, anomaly flagging and challenger scaffolding; applied to model decisions themselves, the auditability problem remains unsolved.</li>
           </ul>
-          <p class="prose muted">Practitioners who see it differently are welcome to make the case.</p>
         </div>
       </div>
     </section>

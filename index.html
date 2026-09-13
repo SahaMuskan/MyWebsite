@@ -157,7 +157,7 @@
             <h3>Model Inventory &amp; Risk Tracker</h3>
             <p class="build-lead">A working model-risk register that tiers every model, schedules its revalidation, and tracks findings through to closure.</p>
             <p class="work-body">Most model inventories are maintained in spreadsheets. This is a purpose-built alternative. Every model is scored on five factors — materiality, complexity, reliance, regulatory impact and uncertainty — into a weighted <strong>Tier 1/2/3</strong> rating, and that tier drives the revalidation clock, flagging each model overdue, due soon or current. Findings are logged against models and tracked to resolution, with a dashboard over the top. It ships with a written methodology, CSV import/export for the Excel workflow teams actually use, and a Docker path for internal hosting — seeded with a fictional bank inventory for demonstration.</p>
-            <p class="work-meta"><span>Node.js</span><span>Express</span><span>Docker</span><span>CSV</span><span>SR 11-7</span><span>Model governance</span></p>
+            <p class="work-meta"><span>SR 11-7</span><span>Model governance</span></p>
             <div class="shots">
               <figure class="shot">
                 <a class="shot-link" href="assets/images/mit-dashboard.jpg" target="_blank" rel="noopener noreferrer" aria-label="Dashboard — open full size">
@@ -184,8 +184,16 @@
                 <figcaption>Findings &amp; Issues</figcaption>
               </figure>
             </div>
-            <p class="shots-note">Four of the six views. All sample data is fictional — select any image to open it full size.</p>
             <a class="build-link" href="https://github.com/SahaMuskan/Model-Inventory-Tracker" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </article>
+
+          <article class="build-item">
+            <p class="work-tag">Open source · AI &amp; GenAI model risk</p>
+            <h3>Model Risk Studio</h3>
+            <p class="build-lead">A validation framework for the models traditional model risk was never designed for — machine learning and LLMs, assessed side by side.</p>
+            <p class="work-body">Most validation frameworks assume scorecards and regression. This one sets traditional ML and generative AI next to each other so the difference in <em>how each must be validated</em> becomes obvious, anchored to <strong>SR 11-7</strong>, the <strong>NIST AI Risk Management Framework</strong> and <strong>EU AI Act</strong> risk tiers. Models are rated on the dimensions that actually make AI risky — explainability, autonomy, output variability, drift, fairness, and for GenAI, hallucination and prompt-injection exposure — rolling transparently into a Tier 1/2/3 rating that sets revalidation cadence. <em>Track A</em> runs the traditional battery: discrimination (AUC, Gini, KS), calibration, PSI drift, feature importance and four-fifths fairness testing. <em>Track B</em> stress-tests a customer-facing banking chatbot through an editable system prompt and an impartial LLM-as-judge — weaken a guardrail and a test visibly fails. It runs fully simulated by default, or live against OpenAI, Azure OpenAI or any OpenAI-compatible internal gateway. Results are illustrative rather than production-calibrated, and the app says so.</p>
+            <p class="work-meta"><span>SR 11-7</span><span>NIST AI RMF</span><span>EU AI Act</span><span>LLM evaluation</span></p>
+            <a class="build-link" href="https://github.com/SahaMuskan/AI-ML-model-risk" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
           </article>
         </div>
       </div>

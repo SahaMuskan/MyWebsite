@@ -133,6 +133,7 @@ html.js .cred-rail{animation-delay:.55s}
 .sec-divide{border-bottom:1px solid var(--line)}
 .builds{margin-top:60px;border-top:1px solid var(--line)}
 .build-item{padding:40px 0;display:grid;gap:16px}
+.build-item+.build-item{border-top:1px solid var(--line);padding-top:44px}
 /* text and images share one measure so every block aligns left and right */
 #built .sec-h,#built .sec-note,.build-item{max-width:880px}
 .build-item>*{max-width:100%}

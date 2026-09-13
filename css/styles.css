@@ -132,9 +132,13 @@ html.js .cred-rail{animation-delay:.55s}
 /* ---------- Built (personal projects) ---------- */
 .sec-divide{border-bottom:1px solid var(--line)}
 .builds{margin-top:60px;border-top:1px solid var(--line)}
-.build-item{padding:40px 0;display:grid;gap:14px}
+.build-item{padding:40px 0;display:grid;gap:16px}
+/* text and images share one measure so every block aligns left and right */
+#built .sec-h,#built .sec-note,.build-item{max-width:880px}
+.build-item>*{max-width:100%}
+.build-item .work-body{max-width:100%}
 .build-item h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,3.2vw,2.1rem);letter-spacing:-.015em;line-height:1.12}
-.build-lead{font-family:var(--serif);font-weight:400;font-size:clamp(1.1rem,2.1vw,1.4rem);line-height:1.32;color:var(--ink);max-width:44ch;margin:0}
+.build-lead{font-family:var(--serif);font-weight:400;font-size:clamp(1.1rem,2.1vw,1.4rem);line-height:1.32;color:var(--ink);max-width:100%;margin:0}
 .shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:12px 0 4px}
 .shots .shot{margin:0;min-width:0}
 .shot-link{display:block;border:1px solid var(--line-strong);border-radius:6px;overflow:hidden;transition:border-color .2s var(--ease)}

@@ -135,6 +135,9 @@ html.js .cred-rail{animation-delay:.55s}
 .build-item{padding:40px 0;display:grid;gap:14px}
 .build-item h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,3.2vw,2.1rem);letter-spacing:-.015em;line-height:1.12}
 .build-lead{font-family:var(--serif);font-weight:400;font-size:clamp(1.1rem,2.1vw,1.4rem);line-height:1.32;color:var(--ink);max-width:44ch;margin:0}
+.shot{margin:10px 0 6px}
+.shot img{width:100%;height:auto;border:1px solid var(--line-strong);border-radius:6px}
+.shot figcaption{margin-top:12px;font-size:13px;color:var(--muted)}
 .build-link{align-self:start;font-size:14.5px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:3px;margin-top:6px;transition:color .2s var(--ease)}
 .build-link:hover{color:var(--gold);text-decoration:none}
 

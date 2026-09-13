@@ -78,23 +78,28 @@ html.dark .i-moon{display:block}
 .btn-block{width:100%}
 
 /* ---------- Hero ---------- */
-.hero{padding:clamp(56px,12vh,120px) 0 clamp(48px,8vh,88px);border-bottom:1px solid var(--line)}
-.hero-h{font-family:var(--serif);font-weight:500;font-size:clamp(1.95rem,5vw,4.3rem);line-height:1.06;letter-spacing:-.025em;max-width:100%;overflow-wrap:break-word;text-wrap:balance}
+.hero{padding:clamp(44px,7vh,84px) 0 clamp(52px,8vh,96px);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,5vw,76px);align-items:start}
+.hero-h{font-family:var(--serif);font-weight:500;font-size:clamp(2.3rem,5.4vw,4.6rem);line-height:1.04;letter-spacing:-.025em;max-width:100%;overflow-wrap:break-word}
 .hero-h .l{display:block}
 .hero-h em{font-style:italic;color:var(--gold)}
-.hero-foot{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;gap:48px;margin-top:44px}
-.hero-desc{max-width:52ch;font-size:18px;color:var(--ink-2);margin:0}
-.hero-cta{display:flex;gap:12px;flex-shrink:0}
-.cred-rail{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:48px 0 0;padding-top:22px;border-top:1px solid var(--line);font-family:var(--sans);font-size:14px;letter-spacing:.01em;color:var(--muted)}
-.cred-rail .sep{color:var(--line-strong)}
+.hero-lead{font-size:clamp(1.05rem,1.7vw,1.28rem);font-weight:500;color:var(--ink);margin:24px 0 0;max-width:40ch;line-height:1.45}
+.hero-bio{margin-top:28px;max-width:62ch}
+.hero-bio p{margin:0 0 15px;color:var(--ink-2);font-size:16.5px;line-height:1.72}
+.hero-bio p:last-child{margin-bottom:0}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.hero-portrait{margin:0;max-width:480px;justify-self:end;border:1px solid var(--line-strong);border-radius:4px;overflow:hidden;background:var(--surface)}
+.hero-portrait img{width:100%;height:auto;display:block}
 
 /* hero reveal — the one authored motion moment */
 html.js .hero-h .l{clip-path:inset(0 0 110% 0);transform:translateY(.16em);animation:heroLine .9s var(--ease) forwards}
 html.js .hero-h .l:nth-child(1){animation-delay:.05s}
 html.js .hero-h .l:nth-child(2){animation-delay:.16s}
 html.js .hero-h .l:nth-child(3){animation-delay:.27s}
-html.js .hero-foot,html.js .cred-rail{opacity:0;animation:fadeUp .8s var(--ease) .4s forwards}
-html.js .cred-rail{animation-delay:.55s}
+html.js .hero-lead,html.js .hero-bio,html.js .hero-cta,html.js .hero-portrait{opacity:0;animation:fadeUp .8s var(--ease) .34s forwards}
+html.js .hero-bio{animation-delay:.44s}
+html.js .hero-cta{animation-delay:.54s}
+html.js .hero-portrait{animation-delay:.2s}
 @keyframes heroLine{to{clip-path:inset(-.1em 0 -.15em 0);transform:none}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 
@@ -208,12 +213,12 @@ html.dark .fstatus.err{color:#f0857a}
   .burger{display:inline-grid}
   .two-col{grid-template-columns:1fr;gap:28px}
   .col-side{display:flex;align-items:center;justify-content:space-between;gap:20px}
-  .portrait{max-width:150px}
   .col-side .lede-label{margin-bottom:0}
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .hero-portrait{justify-self:start;max-width:320px}
   .exp-grid{grid-template-columns:1fr;gap:36px}
   .exp-aside{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:28px}
   .contact-grid{grid-template-columns:1fr;gap:36px}
-  .hero-foot{flex-direction:column;align-items:flex-start;gap:24px}
   .shots{grid-template-columns:1fr;gap:22px}
 }
 @media(max-width:520px){
@@ -226,5 +231,5 @@ html.dark .fstatus.err{color:#f0857a}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important}
   html.js .hero-h .l{clip-path:none;transform:none}
-  html.js .hero-kicker,html.js .hero-foot,html.js .cred-rail{opacity:1}
+  html.js .hero-lead,html.js .hero-bio,html.js .hero-cta,html.js .hero-portrait{opacity:1}
 }

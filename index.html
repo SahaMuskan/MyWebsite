@@ -153,6 +153,53 @@
         <p class="sec-note">Tools built outside client engagements — addressing gaps encountered in day-to-day model risk practice.</p>
         <div class="builds">
           <article class="build-item">
+            <p class="work-tag">Open source · IFRS 9 · Disclosure benchmarking</p>
+            <h3>IFRS 9 / ECL Peer Benchmarking</h3>
+            <p class="build-lead">Turns ten banks' annual reports into a cited, analyst-ready IFRS 9 benchmarking set — without inventing a single figure.</p>
+            <p class="work-body">Annual reports run to roughly 300 pages each, and the IFRS 9 disclosures an analyst actually needs are scattered through them. This tool ingests up to ten firms' PDFs and extracts five subsections per firm — core ECL and coverage, the staging table, impairment movement, model design (scenarios and weights, SICR, 30/90-DPD backstops, PMAs and overlays, climate, PD·LGD·EAD) and disclosure notes — then produces a browsable site, a consolidated PDF and a Power BI-ready master Excel.<br /><br />The engineering is in the guardrails. Text is extracted layout-preserving, so multi-column tables don't collapse into ambiguous number streams. Retrieval narrows ~500 pages to the ~9 most relevant per section before anything reaches the model. A numeric value is kept only if its digits literally appear on a supplied page, and its citation is re-pointed to the page that actually contains it. Every figure carries a printed-page citation and a status flag — <strong>EXACT</strong>, <strong>PROXY</strong>, <strong>DERIVED</strong> or <strong>NOT DISCLOSED</strong> — and anything absent is listed rather than invented. Currency and units are detected per firm, and the approach was validated against five real bank annual reports. The dashboard below is shown with <strong>illustrative demo data for fictional peer banks</strong> — a live run extracts from real annual reports.</p>
+            <p class="work-meta"><span>IFRS 9</span><span>ECL</span><span>Citation-grounded extraction</span><span>Power BI</span></p>
+            <div class="shots">
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/ifrs9-overview.jpg" target="_blank" rel="noopener noreferrer" aria-label="Peer comparison — open full size">
+                  <img src="assets/images/ifrs9-overview-800.jpg" srcset="assets/images/ifrs9-overview-800.jpg 800w, assets/images/ifrs9-overview.jpg 1600w" sizes="(max-width:820px) 92vw, 420px" width="1600" height="1059" loading="lazy" decoding="async" alt="Peer comparison table across five firms showing gross exposure, ECL allowance, net, total coverage and Stage 2 and Stage 3 coverage, with coverage-ratio charts." />
+                </a>
+                <figcaption>Peer comparison</figcaption>
+              </figure>
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/ifrs9-insights.jpg" target="_blank" rel="noopener noreferrer" aria-label="Firm insights — open full size">
+                  <img src="assets/images/ifrs9-insights-800.jpg" srcset="assets/images/ifrs9-insights-800.jpg 800w, assets/images/ifrs9-insights.jpg 1600w" sizes="(max-width:820px) 92vw, 420px" width="1600" height="1059" loading="lazy" decoding="async" alt="Firm insights view summarising a single firm's position against peers with strengths, concerns and suggested follow-ups." />
+                </a>
+                <figcaption>Firm insights</figcaption>
+              </figure>
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/ifrs9-staging.jpg" target="_blank" rel="noopener noreferrer" aria-label="Staging mix and coverage — open full size">
+                  <img src="assets/images/ifrs9-staging-800.jpg" srcset="assets/images/ifrs9-staging-800.jpg 800w, assets/images/ifrs9-staging.jpg 1600w" sizes="(max-width:820px) 92vw, 420px" width="1600" height="1059" loading="lazy" decoding="async" alt="Staging view comparing Stage 1, 2 and 3 exposure mix and coverage ratios across firms." />
+                </a>
+                <figcaption>Staging mix &amp; coverage</figcaption>
+              </figure>
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/ifrs9-trend.jpg" target="_blank" rel="noopener noreferrer" aria-label="Year-on-year trend — open full size">
+                  <img src="assets/images/ifrs9-trend-800.jpg" srcset="assets/images/ifrs9-trend-800.jpg 800w, assets/images/ifrs9-trend.jpg 1600w" sizes="(max-width:820px) 92vw, 420px" width="1600" height="1059" loading="lazy" decoding="async" alt="Year-on-year trend charts for one firm: gross exposure, ECL allowance, coverage ratio and Stage 3 coverage across three reporting years." />
+                </a>
+                <figcaption>Year-on-year trend</figcaption>
+              </figure>
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/ifrs9-movement.jpg" target="_blank" rel="noopener noreferrer" aria-label="Movement and model design — open full size">
+                  <img src="assets/images/ifrs9-movement-800.jpg" srcset="assets/images/ifrs9-movement-800.jpg 800w, assets/images/ifrs9-movement.jpg 1600w" sizes="(max-width:820px) 92vw, 420px" width="1600" height="1059" loading="lazy" decoding="async" alt="Impairment movement waterfall from opening to closing ECL allowance, alongside disclosed model-design attributes such as scenarios, weights, SICR and overlays." />
+                </a>
+                <figcaption>Movement &amp; model design</figcaption>
+              </figure>
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/ifrs9-quality.jpg" target="_blank" rel="noopener noreferrer" aria-label="Data quality — open full size">
+                  <img src="assets/images/ifrs9-quality-800.jpg" srcset="assets/images/ifrs9-quality-800.jpg 800w, assets/images/ifrs9-quality.jpg 1600w" sizes="(max-width:820px) 92vw, 420px" width="1600" height="1059" loading="lazy" decoding="async" alt="Data quality view showing disclosure status per subsection — exact, proxy, derived or not disclosed — with confidence levels per firm." />
+                </a>
+                <figcaption>Data quality &amp; disclosure status</figcaption>
+              </figure>
+            </div>
+            <a class="build-link" href="https://github.com/SahaMuskan/Benchmarking-project" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </article>
+
+          <article class="build-item">
             <p class="work-tag">Open source · Model risk tooling</p>
             <h3>Model Inventory &amp; Risk Tracker</h3>
             <p class="build-lead">A working model-risk register that tiers every model, schedules its revalidation, and tracks findings through to closure.</p>

@@ -79,7 +79,7 @@ html.dark .i-moon{display:block}
 
 /* ---------- Hero ---------- */
 .hero{padding:clamp(56px,12vh,120px) 0 clamp(48px,8vh,88px);border-bottom:1px solid var(--line)}
-.hero-h{font-family:var(--serif);font-weight:500;font-size:clamp(2.1rem,7vw,6rem);line-height:1.02;letter-spacing:-.025em;max-width:min(16ch,100%);overflow-wrap:break-word}
+.hero-h{font-family:var(--serif);font-weight:500;font-size:clamp(1.95rem,5vw,4.3rem);line-height:1.06;letter-spacing:-.025em;max-width:100%;overflow-wrap:break-word;text-wrap:balance}
 .hero-h .l{display:block}
 .hero-h em{font-style:italic;color:var(--gold)}
 .hero-foot{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;gap:48px;margin-top:44px}
@@ -135,9 +135,13 @@ html.js .cred-rail{animation-delay:.55s}
 .build-item{padding:40px 0;display:grid;gap:14px}
 .build-item h3{font-family:var(--serif);font-weight:500;font-size:clamp(1.5rem,3.2vw,2.1rem);letter-spacing:-.015em;line-height:1.12}
 .build-lead{font-family:var(--serif);font-weight:400;font-size:clamp(1.1rem,2.1vw,1.4rem);line-height:1.32;color:var(--ink);max-width:44ch;margin:0}
-.shot{margin:10px 0 6px}
-.shot img{width:100%;height:auto;border:1px solid var(--line-strong);border-radius:6px}
-.shot figcaption{margin-top:12px;font-size:13px;color:var(--muted)}
+.shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:12px 0 4px}
+.shots .shot{margin:0;min-width:0}
+.shot-link{display:block;border:1px solid var(--line-strong);border-radius:6px;overflow:hidden;transition:border-color .2s var(--ease)}
+.shot-link:hover{border-color:var(--gold)}
+.shot img{width:100%;height:auto;display:block}
+.shot figcaption{margin-top:10px;font-size:12.5px;font-weight:600;letter-spacing:.03em;color:var(--muted)}
+.shots-note{margin:14px 0 0;font-size:13px;color:var(--muted)}
 .build-link{align-self:start;font-size:14.5px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:3px;margin-top:6px;transition:color .2s var(--ease)}
 .build-link:hover{color:var(--gold);text-decoration:none}
 
@@ -204,6 +208,7 @@ html.dark .fstatus.err{color:#f0857a}
   .exp-aside{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:28px}
   .contact-grid{grid-template-columns:1fr;gap:36px}
   .hero-foot{flex-direction:column;align-items:flex-start;gap:24px}
+  .shots{grid-template-columns:1fr;gap:22px}
 }
 @media(max-width:520px){
   .exp-row{grid-template-columns:1fr;gap:6px}

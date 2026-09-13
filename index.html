@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,7 +7,7 @@
   <meta name="description" content="Muskan Saha builds and independently validates the credit-risk models banks stake capital on — PD/LGD/EAD, loss forecasting and stress testing under IFRS 9, CECL and CCAR, in SAS and Python." />
   <meta name="author" content="Muskan Saha" />
   <link rel="canonical" href="https://sahamuskan.github.io/MyWebsite/" />
-  <meta name="theme-color" content="#111827" />
+  <meta name="theme-color" content="#0F1116" />
 
   <meta property="og:type" content="profile" />
   <meta property="og:title" content="Muskan Saha — Credit Risk Modeler" />
@@ -27,9 +27,8 @@
   <script>
     (function () {
       try {
-        var s = localStorage.getItem('theme');
-        var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.classList.toggle('dark', (s || (d ? 'dark' : 'light')) === 'dark');
+        // Dark is the default; only an explicit choice of light overrides it.
+        if (localStorage.getItem('theme') === 'light') document.documentElement.classList.remove('dark');
       } catch (e) {}
       var de = document.documentElement; de.setAttribute('data-preload',''); de.classList.add('js');
     })();
@@ -84,12 +83,12 @@
     <section class="hero" aria-labelledby="hero-h">
       <div class="wrap hero-in">
         <h1 id="hero-h" class="hero-h">
-          <span class="l">I build the credit models</span>
-          <span class="l">banks stake <em>capital</em> on —</span>
-          <span class="l">and make them <em>defensible</em>.</span>
+          <span class="l">Muskan Saha builds the credit</span>
+          <span class="l">models banks stake <em>capital</em> on —</span>
+          <span class="l">then makes them <em>defensible</em>.</span>
         </h1>
         <div class="hero-foot">
-          <p class="hero-desc">I'm <strong>Muskan Saha</strong>. I build and validate the PD, LGD and EAD models that sit behind loss forecasts and regulatory capital — then defend the assumptions, in writing and in the room, to Model Risk committees that push back hard.</p>
+          <p class="hero-desc">She develops the PD, LGD and EAD models behind loss forecasts and regulatory capital — and, on separate engagements, serves as the independent validator who challenges them. Four years at <strong>Accenture</strong> and <strong>Deloitte</strong>, defending assumptions in writing and before Model Risk committees.</p>
           <div class="hero-cta">
             <a class="btn btn-solid" href="#contact">Discuss an opportunity</a>
             <a class="btn btn-line" href="#work">See selected work</a>
@@ -112,9 +111,9 @@
           </figure>
         </div>
         <div class="col-main prose">
-          <p class="big">I came to finance from physics — and I still read a portfolio the way I read an experiment: find the real distribution, question every assumption, and never trust a number you can't defend.</p>
-          <p>That instinct is what model risk is actually about. At <strong>Accenture</strong> and <strong>Deloitte</strong> I've built and independently validated the models behind credit decisions worth billions — scorecards, PD term structures, loss forecasts, stress tests — and then sat in the room when they were challenged.</p>
-          <p>I care about models that are transparent, challenger-tested, and built to survive the cycle — not engineered to clear a review and fail when the macro turns. I'm as comfortable defending a forecast to a Model Risk committee as I am writing the SAS or Python behind it.</p>
+          <p class="big">Muskan Saha came to finance from physics — and still reads a portfolio the way she reads an experiment: find the real distribution, question every assumption, and never trust a number that cannot be defended.</p>
+          <p>That instinct is what model risk is actually about. Across <strong>Accenture</strong> and <strong>Deloitte</strong> she has developed the models behind credit decisions worth billions — scorecards, PD term structures, loss forecasts, stress tests — and, on separate engagements, served as the independent validator challenging them.</p>
+          <p>Her standard is models that are transparent, challenger-tested and built to survive the full credit cycle — not engineered to clear a review and fail when the macro turns. She moves between the SAS and Python behind a model and its defence before a Model Risk committee.</p>
         </div>
       </div>
     </section>
@@ -128,19 +127,19 @@
           <li class="work-item">
             <p class="work-tag">PPNR Forecasting · Tier-1 US Bank</p>
             <h3>Turned management judgment into a model the bank could defend.</h3>
-            <p class="work-body">Built a pre-provision net revenue forecast in Python — taking senior management's macro assumptions and making them quantifiable, auditable time-series drivers. Documented the design end to end, stress-tested it against alternative scenarios, and presented to the bank's Model Risk function. It held up.</p>
+            <p class="work-body">She built a pre-provision net revenue forecast in Python, converting senior management's macro assumptions into quantifiable, auditable time-series drivers. She documented it end to end, stress-tested it against alternative scenarios, and presented the design, assumptions and results to the bank's Model Risk function.</p>
             <p class="work-meta"><span>Python</span><span>Time-series</span><span>CCAR</span><span>Model governance</span></p>
           </li>
           <li class="work-item">
             <p class="work-tag">IRB Scorecard Validation · Retail Credit</p>
             <h3>Independent validation that underwriting could act on.</h3>
-            <p class="work-body">Validated application scorecards for credit cards and personal loans — discrimination (ROC-AUC, Gini), calibration and reject-inference bias — and translated the findings into guidance underwriting teams could act on, from cut-off calibration to risk segmentation.</p>
+            <p class="work-body">She validated application scorecards for credit cards and personal loans — discrimination (ROC-AUC, Gini), calibration and reject-inference bias — and translated the findings into guidance underwriting teams could act on, from cut-off calibration to risk segmentation.</p>
             <p class="work-meta"><span>IRB</span><span>Scorecards</span><span>SR 11-7</span><span>Reject inference</span></p>
           </li>
           <li class="work-item">
             <p class="work-tag">IFRS 9 Term-Structure PDs · Deloitte</p>
             <h3>Lifetime credit losses, built to survive the macro cycle.</h3>
-            <p class="work-body">Derived 12-month and lifetime PDs from flow-rate analysis with forward-looking macro overlays, and benchmarked judgmental scorecards against gradient-boosted challengers with regulator-ready explainability (SHAP).</p>
+            <p class="work-body">She derived 12-month and lifetime PDs from flow-rate analysis with forward-looking macro overlays, and benchmarked judgmental scorecards against gradient-boosted challengers, with SHAP-based explainability documented for independent review.</p>
             <p class="work-meta"><span>IFRS 9</span><span>Flow-rate</span><span>XGBoost</span><span>Explainability</span></p>
           </li>
         </ol>
@@ -151,21 +150,40 @@
     <section id="built" class="sec sec-divide" aria-labelledby="built-h">
       <div class="wrap">
         <h2 id="built-h" class="sec-h">Built</h2>
-        <p class="sec-note">Tools I build in my own time — usually because I wanted them to exist while doing the day job.</p>
+        <p class="sec-note">Tools built outside client engagements — addressing gaps encountered in day-to-day model risk practice.</p>
         <div class="builds">
           <article class="build-item">
             <p class="work-tag">Open source · Model risk tooling</p>
             <h3>Model Inventory &amp; Risk Tracker</h3>
             <p class="build-lead">A working model-risk register that tiers every model, schedules its revalidation, and tracks findings through to closure.</p>
-            <figure class="shot">
-              <img src="assets/images/mit-dashboard.jpg"
-                   srcset="assets/images/mit-dashboard-960.jpg 960w, assets/images/mit-dashboard.jpg 1600w"
-                   sizes="(max-width:820px) 92vw, 1100px"
-                   width="1600" height="1059" loading="lazy" decoding="async"
-                   alt="Dashboard of the Model Inventory and Risk Tracker, showing active model counts, Tier 1 high-risk models, overdue validations and open findings, with breakdowns by risk tier and issue severity and a queue of overdue validations." />
-              <figcaption>Dashboard — risk tiers, validation status and open findings in a single view. All sample data is fictional.</figcaption>
-            </figure>
-            <p class="work-body">Most model inventories live in a spreadsheet. This is the one I wanted instead. Every model is scored on five factors — materiality, complexity, reliance, regulatory impact and uncertainty — into a weighted <strong>Tier 1/2/3</strong> rating, and that tier drives the revalidation clock, flagging each model overdue, due soon or current. Findings are logged against models and tracked to resolution, with a dashboard over the top. It ships with a written methodology, CSV import/export for the Excel workflow teams actually use, and a Docker path for internal hosting — seeded with a fictional bank inventory so it's usable the moment it opens.</p>
+            <div class="shots">
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/mit-dashboard.jpg" target="_blank" rel="noopener noreferrer" aria-label="Dashboard — open full size">
+                  <img src="assets/images/mit-dashboard-800.jpg" srcset="assets/images/mit-dashboard-800.jpg 800w, assets/images/mit-dashboard.jpg 1600w" sizes="(max-width:820px) 92vw, 540px" width="1600" height="1059" loading="lazy" decoding="async" alt="Dashboard: active model counts, Tier 1 high-risk models, overdue validations and open findings, with breakdowns by risk tier and issue severity." />
+                </a>
+                <figcaption>Dashboard</figcaption>
+              </figure>
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/mit-models.jpg" target="_blank" rel="noopener noreferrer" aria-label="Model Register — open full size">
+                  <img src="assets/images/mit-models-800.jpg" srcset="assets/images/mit-models-800.jpg 800w, assets/images/mit-models.jpg 1600w" sizes="(max-width:820px) 92vw, 540px" width="1600" height="1059" loading="lazy" decoding="async" alt="Model Register: searchable table of every model with business unit, in-house or vendor build, risk tier and score, validation status and owner." />
+                </a>
+                <figcaption>Model Register</figcaption>
+              </figure>
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/mit-validation.jpg" target="_blank" rel="noopener noreferrer" aria-label="Validation Schedule — open full size">
+                  <img src="assets/images/mit-validation-800.jpg" srcset="assets/images/mit-validation-800.jpg 800w, assets/images/mit-validation.jpg 1600w" sizes="(max-width:820px) 92vw, 540px" width="1600" height="1059" loading="lazy" decoding="async" alt="Validation Schedule: overdue, due-soon and current counts, editable per-tier revalidation intervals, and a re-validation queue sorted by urgency." />
+                </a>
+                <figcaption>Validation Schedule</figcaption>
+              </figure>
+              <figure class="shot">
+                <a class="shot-link" href="assets/images/mit-findings.jpg" target="_blank" rel="noopener noreferrer" aria-label="Findings &amp; Issues — open full size">
+                  <img src="assets/images/mit-findings-800.jpg" srcset="assets/images/mit-findings-800.jpg 800w, assets/images/mit-findings.jpg 1600w" sizes="(max-width:820px) 92vw, 540px" width="1600" height="1059" loading="lazy" decoding="async" alt="Findings and Issues: issues raised against models with source, severity, description, target date and resolution status." />
+                </a>
+                <figcaption>Findings &amp; Issues</figcaption>
+              </figure>
+            </div>
+            <p class="shots-note">Four of the six views. All sample data is fictional — select any image to open it full size.</p>
+            <p class="work-body">Most model inventories are maintained in spreadsheets. This is a purpose-built alternative. Every model is scored on five factors — materiality, complexity, reliance, regulatory impact and uncertainty — into a weighted <strong>Tier 1/2/3</strong> rating, and that tier drives the revalidation clock, flagging each model overdue, due soon or current. Findings are logged against models and tracked to resolution, with a dashboard over the top. It ships with a written methodology, CSV import/export for the Excel workflow teams actually use, and a Docker path for internal hosting — seeded with a fictional bank inventory for demonstration.</p>
             <p class="work-meta"><span>Node.js</span><span>Express</span><span>Docker</span><span>CSV</span><span>SR 11-7</span><span>Model governance</span></p>
             <a class="build-link" href="https://github.com/SahaMuskan/Model-Inventory-Tracker" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
           </article>
@@ -178,14 +196,14 @@
       <div class="wrap two-col">
         <div class="col-side"><h2 id="persp-h" class="lede-label">Perspective</h2></div>
         <div class="col-main">
-          <p class="big prose">Model risk isn't a compliance tax — done right, it's how an institution earns the confidence to lend. A few things I like arguing about:</p>
+          <p class="big prose">Model risk isn't a compliance tax — done right, it's how an institution earns the confidence to lend. Four positions that inform her practice:</p>
           <ul class="ideas">
-            <li>What IFRS 9 staging really does once the macro turns — and why the cliff-edge rarely sits where the model puts it.</li>
-            <li>Challenger models aren't a beauty contest. SR 11-7 is really asking whether your production model can lose an argument.</li>
-            <li>Explainability that survives a validation — SHAP built for the committee isn't the same as SHAP that actually explains the score.</li>
-            <li>Where GenAI genuinely helps model risk — documentation, anomaly flagging, challenger scaffolding — and where it quietly doesn't.</li>
+            <li>IFRS 9 staging is more sensitive to model specification than to the macro path it tracks — the cliff-edge rarely falls where the threshold model places it.</li>
+            <li>A challenger model is not a benchmarking exercise. SR 11-7 is asking whether the production model can lose an argument.</li>
+            <li>SHAP built to satisfy a committee and SHAP that actually explains score variation are not the same deliverable — and the difference shows under stress.</li>
+            <li>GenAI earns its place in model documentation, anomaly flagging and challenger scaffolding; applied to model decisions themselves, the auditability problem remains unsolved.</li>
           </ul>
-          <p class="prose muted">If any of these land differently for you, I'd genuinely like to hear it.</p>
+          <p class="prose muted">Practitioners who see it differently are welcome to make the case.</p>
         </div>
       </div>
     </section>
@@ -200,14 +218,14 @@
               <p class="exp-when mono">2024 — Now</p>
               <div>
                 <h3>Decision Science &amp; Risk Modeling <span>· Accenture Strategy &amp; Consulting</span></h3>
-                <p>Led CCAR, CECL and IFRS 9 performance monitoring across wholesale portfolios; independently validated IRB retail scorecards; built and defended a PPNR forecast before a Tier-1 US bank's Model Risk committee.</p>
+                <p>She led CCAR, CECL and IFRS 9 performance monitoring across wholesale portfolios; independently validated IRB retail scorecards on separate engagements; and built and defended a PPNR forecast before a Tier-1 US bank's Model Risk committee.</p>
               </div>
             </article>
             <article class="exp-row">
               <p class="exp-when mono">2022 — 2024</p>
               <div>
                 <h3>Model Risk Management <span>· Deloitte</span></h3>
-                <p>Built IFRS 9 term-structure PDs with macro overlays; validated a HELOC capital-reserve model through stress testing; developed behavioural scorecards and gradient-boosted challengers with explainability documentation for SR 11-7.</p>
+                <p>She built IFRS 9 term-structure PDs with macro overlays; validated a HELOC capital-reserve model through stress testing; and developed behavioural scorecards and gradient-boosted challengers, documenting findings for model risk governance under SR 11-7.</p>
               </div>
             </article>
           </div>
@@ -224,8 +242,8 @@
     <!-- CONTACT -->
     <section id="contact" class="sec contact" aria-labelledby="contact-h">
       <div class="wrap">
-        <h2 id="contact-h" class="sec-h contact-h">Let's talk.</h2>
-        <p class="contact-lede prose">Open to senior credit-risk and model-risk roles — and genuinely interested in talking shop with people working the same problems. Send a note; no email or phone required.</p>
+        <h2 id="contact-h" class="sec-h contact-h">Get in touch.</h2>
+        <p class="contact-lede prose">Muskan Saha is open to senior credit-risk and model-risk roles, and welcomes conversations with practitioners working the same problems. Use the form below — only an email address is needed to reply.</p>
         <div class="contact-grid">
           <form id="contact-form" class="cform" method="POST" novalidate>
             <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
@@ -244,7 +262,7 @@
             <p class="lede-label">Elsewhere</p>
             <a class="contact-link" href="https://www.linkedin.com/in/muskan-saha-811a04142/" target="_blank" rel="noopener noreferrer">LinkedIn ↗<span>muskan-saha</span></a>
             <a class="contact-link" href="https://github.com/SahaMuskan" target="_blank" rel="noopener noreferrer">GitHub ↗<span>SahaMuskan</span></a>
-            <p class="contact-avail">Usually replies within a day or two.</p>
+            <p class="contact-avail">Enquiries are welcome via the form or LinkedIn.</p>
           </aside>
         </div>
       </div>

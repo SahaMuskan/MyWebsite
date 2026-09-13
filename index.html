@@ -53,6 +53,7 @@
       <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#work">Work</a>
+        <a href="#built">Built</a>
         <a href="#perspective">Perspective</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -73,7 +74,7 @@
       </div>
     </div>
     <nav id="mobile-menu" class="nav-m" aria-label="Mobile" hidden>
-      <a href="#about">About</a><a href="#work">Work</a><a href="#perspective">Perspective</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#work">Work</a><a href="#built">Built</a><a href="#perspective">Perspective</a><a href="#contact">Contact</a>
     </nav>
   </header>
 
@@ -143,6 +144,24 @@
             <p class="work-meta"><span>IFRS 9</span><span>Flow-rate</span><span>XGBoost</span><span>Explainability</span></p>
           </li>
         </ol>
+      </div>
+    </section>
+
+    <!-- BUILT -->
+    <section id="built" class="sec sec-divide" aria-labelledby="built-h">
+      <div class="wrap">
+        <h2 id="built-h" class="sec-h">Built</h2>
+        <p class="sec-note">Tools I build in my own time — usually because I wanted them to exist while doing the day job.</p>
+        <div class="builds">
+          <article class="build-item">
+            <p class="work-tag">Open source · Model risk tooling</p>
+            <h3>Model Inventory &amp; Risk Tracker</h3>
+            <p class="build-lead">A working model-risk register that tiers every model, schedules its revalidation, and tracks findings through to closure.</p>
+            <p class="work-body">Most model inventories live in a spreadsheet. This is the one I wanted instead. Every model is scored on five factors — materiality, complexity, reliance, regulatory impact and uncertainty — into a weighted <strong>Tier 1/2/3</strong> rating, and that tier drives the revalidation clock, flagging each model overdue, due soon or current. Findings are logged against models and tracked to resolution, with a dashboard over the top. It ships with a written methodology, CSV import/export for the Excel workflow teams actually use, and a Docker path for internal hosting — seeded with a fictional bank inventory so it's usable the moment it opens.</p>
+            <p class="work-meta"><span>Node.js</span><span>Express</span><span>Docker</span><span>CSV</span><span>SR 11-7</span><span>Model governance</span></p>
+            <a class="build-link" href="https://github.com/SahaMuskan/Model-Inventory-Tracker" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a>
+          </article>
+        </div>
       </div>
     </section>
 

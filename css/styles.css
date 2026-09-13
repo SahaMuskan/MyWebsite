@@ -79,16 +79,16 @@ html.dark .i-moon{display:block}
 
 /* ---------- Hero ---------- */
 .hero{padding:clamp(44px,7vh,84px) 0 clamp(52px,8vh,96px);border-bottom:1px solid var(--line)}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,5vw,76px);align-items:start}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(36px,5vw,72px);align-items:center}
 .hero-h{font-family:var(--serif);font-weight:500;font-size:clamp(2.3rem,5.4vw,4.6rem);line-height:1.04;letter-spacing:-.025em;max-width:100%;overflow-wrap:break-word}
 .hero-h .l{display:block}
 .hero-h em{font-style:italic;color:var(--gold)}
-.hero-lead{font-size:clamp(1.05rem,1.7vw,1.28rem);font-weight:500;color:var(--ink);margin:24px 0 0;max-width:40ch;line-height:1.45}
+.hero-lead{font-size:clamp(1.05rem,1.7vw,1.28rem);font-weight:500;color:var(--ink);margin:24px 0 0;max-width:44ch;line-height:1.45;text-wrap:balance}
 .hero-bio{margin-top:28px;max-width:62ch}
 .hero-bio p{margin:0 0 15px;color:var(--ink-2);font-size:16.5px;line-height:1.72}
 .hero-bio p:last-child{margin-bottom:0}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
-.hero-portrait{margin:0;max-width:480px;justify-self:end;border:1px solid var(--line-strong);border-radius:4px;overflow:hidden;background:var(--surface)}
+.hero-portrait{margin:0;max-width:370px;justify-self:end;border:1px solid var(--line-strong);border-radius:4px;overflow:hidden;background:var(--surface)}
 .hero-portrait img{width:100%;height:auto;display:block}
 
 /* hero reveal — the one authored motion moment */

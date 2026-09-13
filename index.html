@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muskan Saha — Quantitative Credit Risk Modeler | IFRS 9 · CECL · CCAR</title>
+  <meta name="description" content="Muskan Saha — credit risk model specialist. Development, validation and monitoring of PD/LGD/EAD models and loss forecasts under IFRS 9, CECL and CCAR, in SAS and Python." />
+  <meta name="author" content="Muskan Saha" />
+  <link rel="canonical" href="https://sahamuskan.github.io/MyWebsite/" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Muskan Saha — Credit Risk Model Specialist" />
+  <meta property="og:description" content="Development, validation and monitoring of credit-risk models under IFRS 9, CECL and CCAR." />
+  <meta property="og:url" content="https://sahamuskan.github.io/MyWebsite/" />
+  <meta property="og:image" content="https://sahamuskan.github.io/MyWebsite/assets/images/og-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Muskan Saha — Credit Risk Model Specialist" />
+  <meta name="twitter:description" content="Development, validation and monitoring of credit-risk models under IFRS 9, CECL and CCAR." />
+  <meta name="twitter:image" content="https://sahamuskan.github.io/MyWebsite/assets/images/og-card.jpg" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+
+  <!-- No-flash theme: set before styles load -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+      } catch (e) {}
+      var de = document.documentElement;
+      de.setAttribute('data-preload', '');
+      de.classList.add('js');
+    })();
+  </script>
+
+  <!-- Fonts: IBM Plex Sans + Mono (v1 via Google Fonts; self-host is a documented follow-up) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- JSON-LD Person (no email/phone by design) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Muskan Saha",
+    "jobTitle": "Credit Risk Model Specialist",
+    "url": "https://sahamuskan.github.io/MyWebsite/",
+    "image": "https://sahamuskan.github.io/MyWebsite/assets/images/muskan-portrait.jpg",
+    "alumniOf": "Indian Institute of Science Education and Research, Bhopal",
+    "sameAs": ["https://www.linkedin.com/in/muskan-saha-811a04142/"],
+    "knowsAbout": ["Credit Risk Modeling", "Model Validation", "PD LGD EAD", "IFRS 9", "CECL", "CCAR", "Loss Forecasting", "Regulatory Capital"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#hero" aria-label="Muskan Saha — home">
+        <span class="brand-mark" aria-hidden="true">MS</span>
+        <span class="brand-name">Muskan Saha</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Switch to dark theme">
+          <svg class="i-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="nav-toggle" class="icon-btn nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="nav-mobile" aria-label="Mobile" hidden>
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-labelledby="hero-h">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Credit Risk · Model Development &amp; Validation</p>
+          <h1 id="hero-h">Muskan Saha</h1>
+          <p class="hero-lead">Credit Risk Model Specialist — Validation, Forecasting &amp; Regulatory Capital.</p>
+          <p class="hero-sub">I build, validate and monitor the models banks use to measure credit losses and hold capital — PD, LGD and EAD, loss forecasts and stress testing under IFRS&nbsp;9, CECL and CCAR. Physics-trained rigor, delivered in SAS and Python.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#experience">View experience</a>
+            <a class="btn btn-ghost" href="#contact">Discuss an opportunity</a>
+          </div>
+        </div>
+        <aside class="hero-side reveal" aria-label="At a glance">
+          <div class="portrait">
+            <img src="assets/images/muskan-portrait.jpg"
+                 srcset="assets/images/muskan-portrait-480.jpg 480w, assets/images/muskan-portrait.jpg 672w"
+                 sizes="(max-width: 720px) 60vw, 340px"
+                 width="672" height="645"
+                 alt="Portrait of Muskan Saha" fetchpriority="high" decoding="async" />
+          </div>
+          <ul class="stat-strip">
+            <li><span class="stat-num" data-count="4" data-suffix="+">4+</span><span class="stat-label">Years in credit risk</span></li>
+            <li><span class="stat-num">6</span><span class="stat-label">Regulatory regimes</span></li>
+            <li><span class="stat-num">9.76</span><span class="stat-label">Academic CPI · Physics</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-h">
+      <div class="wrap">
+        <p class="sec-index"><span class="gold">01</span> / About</p>
+        <h2 id="about-h" class="sec-title">From first principles to portfolio risk</h2>
+        <div class="about-grid">
+          <blockquote class="pull reveal">Models regulators trust, and decisions stakeholders can act on.</blockquote>
+          <div class="about-body reveal">
+            <p>I began in physics at IISER Bhopal — one of India's most selective science and research institutes — where I learned to reason about uncertainty from first principles. The same question, <em>what is the true distribution of outcomes?</em>, is what drew me into quantitative credit risk.</p>
+            <p>Today I develop, validate and monitor the models that measure credit losses and regulatory capital: PD, LGD and EAD estimation, scorecards, loss and revenue forecasting, and stress testing across retail and wholesale portfolios.</p>
+            <p>I work to a governance standard — transparent assumptions, defensible documentation, and challenger testing rather than black boxes — and I've presented model design and findings directly to Model Risk Management. I'm equally at home in a SAS validation pack and a Python forecasting pipeline.</p>
+            <p class="about-open">Always glad to connect with teams working on credit-risk modeling, model validation or decision science in financial services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section section-alt" aria-labelledby="expertise-h">
+      <div class="wrap">
+        <p class="sec-index"><span class="gold">02</span> / Expertise</p>
+        <h2 id="expertise-h" class="sec-title">What I work on</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>Model development &amp; forecasting</h3>
+            <p>PD, LGD and EAD estimation, application and behavioural scorecards, PPNR and loss forecasting, and flow-rate PD term structures — across retail and wholesale portfolios.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Independent model validation</h3>
+            <p>End-to-end validation of scorecards and capital models: discrimination, calibration and stability testing, reject inference, benchmarking and scenario stress testing — aligned to SR 11-7.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Regulatory monitoring &amp; governance</h3>
+            <p>Ongoing performance monitoring under IFRS 9, CECL and CCAR: accuracy and stability indicators, RAG reporting, loss forecasts, and findings prepared for model-risk governance.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Methods &amp; tooling</h3>
+            <p>Regression, time-series, PCA and gradient-boosted models with explainability — delivered in <span class="mono">Python</span>, <span class="mono">SAS</span> and <span class="mono">SQL</span>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section" aria-labelledby="experience-h">
+      <div class="wrap">
+        <p class="sec-index"><span class="gold">03</span> / Experience</p>
+        <h2 id="experience-h" class="sec-title">Selected experience</h2>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-date mono">Sep 2024<br />— Present</div>
+            <div class="tl-node" aria-hidden="true"></div>
+            <div class="tl-body">
+              <h3>Decision Science &amp; Risk Modeling <span class="tl-org">· Accenture Strategy &amp; Consulting</span></h3>
+              <ul>
+                <li>Lead ongoing performance monitoring for CCAR, CECL and IFRS 9 across multiple wholesale portfolios — quarterly stability and accuracy indicators, RAG status and loss forecasts using time-series methods.</li>
+                <li>Independently validate IRB retail application scorecards for credit cards and personal loans, testing discrimination (ROC-AUC, Gini), calibration and reject-inference bias to support underwriting and segmentation.</li>
+                <li><strong>Featured:</strong> built a PPNR forecasting model in Python for a large US bank, translating senior-management assumptions into quantitative drivers via multivariate time-series regression — documented and presented to Model Risk Management.</li>
+              </ul>
+              <p class="tags"><span>IFRS 9</span><span>CECL</span><span>CCAR</span><span>IRB</span><span class="mono">Python</span><span class="mono">SAS</span></p>
+            </div>
+          </li>
+          <li class="tl-item reveal">
+            <div class="tl-date mono">Jun 2022<br />— Aug 2024</div>
+            <div class="tl-node" aria-hidden="true"></div>
+            <div class="tl-body">
+              <h3>Model Risk Management <span class="tl-org">· Deloitte</span></h3>
+              <ul>
+                <li>Built IFRS 9 term-structure PDs using flow-rate analysis, deriving 12-month and lifetime PDs with forward-looking macroeconomic overlays.</li>
+                <li>Validated a HELOC capital-reserve model through scenario stress testing, sensitivity analysis and risk-weighted loss estimation.</li>
+                <li>Developed behavioural scorecards in SAS (vintage profiling, rank-ordering, KS testing) and gradient-boosted challenger models with regulator-ready explainability.</li>
+              </ul>
+              <p class="tags"><span>IFRS 9</span><span>Basel</span><span>SR 11-7</span><span class="mono">SAS</span><span class="mono">Python</span></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt" aria-labelledby="skills-h">
+      <div class="wrap">
+        <p class="sec-index"><span class="gold">04</span> / Skills</p>
+        <h2 id="skills-h" class="sec-title">Toolkit</h2>
+        <div class="skill-groups">
+          <div class="skill-group reveal">
+            <h3 class="skill-label">Domains</h3>
+            <ul class="tag-list">
+              <li>PD / LGD / EAD</li><li>Loss Forecasting</li><li>Capital Estimation</li><li>VaR &amp; Expected Shortfall</li><li>PPNR</li><li>IRB</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-label">Regulatory</h3>
+            <ul class="tag-list">
+              <li>IFRS 9</li><li>CECL</li><li>CCAR</li><li>Basel</li><li>DFAST</li><li>SR 11-7</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-label">Methods</h3>
+            <ul class="tag-list">
+              <li>Logistic &amp; Linear Regression</li><li>Time-Series</li><li>Gradient Boosting / XGBoost</li><li>PCA</li><li>Scorecards</li><li>Reject Inference</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-label">Languages &amp; tools</h3>
+            <ul class="tag-list mono-tags">
+              <li>Python</li><li>SAS</li><li>SQL</li><li>Excel</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="creds">
+          <div class="cred-col reveal">
+            <h3 class="skill-label">Education</h3>
+            <p class="cred-line"><strong>IISER Bhopal</strong> — BS-MS Dual Degree, Physics</p>
+            <p class="cred-meta mono">2017 – 2022 · CPI 9.76 / 10</p>
+          </div>
+          <div class="cred-col reveal">
+            <h3 class="skill-label">Certifications</h3>
+            <p class="cred-line"><strong>SAS Base Programmer</strong> <span class="cred-meta mono">911 / 1000</span></p>
+            <p class="cred-line"><strong>AWS Certified Cloud Practitioner</strong> <span class="cred-meta mono">2023</span></p>
+            <p class="cred-line">Generative AI &amp; Agentic AI <span class="cred-meta">· Udacity</span></p>
+            <p class="cred-line">C/C++ &amp; MySQL <span class="cred-meta">· C-DAC</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-h">
+      <div class="wrap contact-wrap">
+        <p class="sec-index"><span class="gold">05</span> / Contact</p>
+        <h2 id="contact-h" class="sec-title">Discuss an opportunity</h2>
+        <p class="contact-intro">Open to conversations about credit-risk, model-risk and decision-science roles or collaborations. Send a note below or connect on LinkedIn — no email or phone required.</p>
+
+        <form id="contact-form" class="contact-form" method="POST" novalidate>
+          <!-- Web3Forms: replace with your own access key (submit-only, safe to be public). See README. -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="New message from your website" />
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="cf-reason">Reason for reaching out</label>
+            <select id="cf-reason" name="reason">
+              <option>Discuss an opportunity</option>
+              <option>Hire me / role enquiry</option>
+              <option>Collaboration</option>
+              <option>General enquiry</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-email">Your email</label>
+            <input id="cf-email" name="email" type="email" required autocomplete="email" />
+            <p class="field-hint">Used only to reply to you — never shown on this site.</p>
+          </div>
+          <div class="field">
+            <label for="cf-msg">Message</label>
+            <textarea id="cf-msg" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+        </form>
+
+        <p class="contact-alt">Prefer LinkedIn? <a href="https://www.linkedin.com/in/muskan-saha-811a04142/" target="_blank" rel="noopener noreferrer">linkedin.com/in/muskan-saha</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Muskan Saha</p>
+        <p class="footer-role mono">Credit Risk Model Specialist</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/muskan-saha-811a04142/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">LinkedIn</a>
+        <a href="#hero">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="wrap footer-fine"><p>© <span id="year"></span> Muskan Saha · No cookies, no tracking.</p></div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

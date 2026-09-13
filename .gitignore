@@ -1,0 +1,23 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Node (only if a Tailwind CLI workflow is added later)
+node_modules/
+npm-debug.log*
+tailwindcss
+tailwindcss.exe
+
+# Secrets (there is no server; never commit any)
+.env
+*.env.local
+
+# The original résumé must never be committed (contains private contact details)
+Muskan_Saha.pdf
+# Original uncropped photo — only the cropped/optimized versions in assets/images are used
+my pic.jpg
+# Stray PowerShell artefact
+$null
